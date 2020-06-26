@@ -33,6 +33,11 @@ ul {
   width: 34px;
 }
 
+.current-square {
+  font-weight: bolder;
+  color: blueviolet;
+}
+
 .square:focus {
   outline: none;
 }

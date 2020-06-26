@@ -3,6 +3,14 @@ import Square from './Square';
 
 class Board extends React.Component {
   renderSquare(i) {
+    if (this.props.currentItem === i) {
+      return (
+        <Square
+          value={<div className="current-square">{this.props.squares[i]}</div>}
+          onClick={() => this.props.onClick(i)}
+        />
+      );
+    } 
     return (
       <Square 
         value={this.props.squares[i]}
