@@ -34,8 +34,12 @@ ul {
 }
 
 .current-square {
-  font-weight: bolder;
   color: blueviolet;
+}
+
+.win-square {
+  font-weight: bolder;
+  color: red;
 }
 
 .square:focus {
