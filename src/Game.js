@@ -68,37 +68,11 @@ class Game extends React.Component {
     const currentItem = current.currentItem;
 
     const moves = history.map((step, move) => {
-      var rowCol = "";
-      switch(history[move].currentItem) {
-        case 0:
-          rowCol = "Row 1, Col 1";
-          break;
-        case 1:
-          rowCol = "Row 1, Col 2";
-          break;
-        case 2:
-          rowCol = "Row 1, Col 3";
-          break;
-        case 3:
-          rowCol = "Row 2, Col 1";
-          break;
-        case 4:
-          rowCol = "Row 2, Col 2";
-          break;
-        case 5:
-          rowCol = "Row 2, Col 3";
-          break;
-        case 6:
-          rowCol = "Row 3, Col 1";
-          break;
-        case 7:
-          rowCol = "Row 3, Col 2";
-          break;
-        default:
-          rowCol = "Row 3, Col 3";
-          break;
-      }
-
+      const currentRowCol = history[move].currentItem; 
+      const rowNum = Math.floor(history[move].currentItem / 3) + 1;
+      const colNum = history[move].currentItem % 3 + 1;
+      const rowCol = "Row " + rowNum + ", Col " + colNum;
+     
       const desc = move ?
         'Go to ' + rowCol:
         'Game Start';
