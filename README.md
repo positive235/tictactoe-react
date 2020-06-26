@@ -2,6 +2,14 @@
 
 Tic-Tac-Toe based on <a href="https://reactjs.org/tutorial/tutorial.html#inspecting-the-starter-code">React tic-tac-toe tutorial</a> with improvements
 
+## How to run
+
+```
+cd tictactoe-react
+npm i
+npm start
+```
+
 ## Improvements
 
 :ballot_box_with_check: **[Done]** Change the color of the currently selected item in the move list
