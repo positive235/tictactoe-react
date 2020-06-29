@@ -1,4 +1,4 @@
-# Tic-Tac-Toe in React (In Progress)
+# Tic-Tac-Toe in React
 
 Tic-Tac-Toe based on <a href="https://reactjs.org/tutorial/tutorial.html#inspecting-the-starter-code">React tic-tac-toe tutorial</a> with improvements
 
