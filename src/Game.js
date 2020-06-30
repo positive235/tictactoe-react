@@ -79,12 +79,11 @@ class Game extends React.Component {
       const rowCol = "Row " + rowNum + ", Col " + colNum;
      
       const desc = move ?
-        'Go to ' + rowCol:
+        rowCol:
         'Game Start';
-
       return (
         <li key={move}>
-          <button onClick={() => this.jumpTo(move)}>
+          <button class="historyButton" onClick={() => this.jumpTo(move)}>
             {desc}
           </button>
         </li>
@@ -97,12 +96,13 @@ class Game extends React.Component {
     } else if (winResult == null && this.state.stepNumber == 9) {
       status = 'Draw!';
     } else {
-      status = 'Next Player: ' + (this.state.xIsNext ? 'X' : 'O');
+      status = 'Next: ' + (this.state.xIsNext ? 'X' : 'O');
     }
 
     return (
       <div className="game">
         <div className="game-board">
+          <div class="status-txt">{status}</div>
           <Board
             squares={current.squares}
             onClick={i => this.handleClick(i)}
@@ -111,7 +111,7 @@ class Game extends React.Component {
           />
         </div>
         <div className="game-info">
-          <div>{status}</div>
+          <h4>History</h4>
           <ol>{moves}</ol>
         </div>
       </div>
