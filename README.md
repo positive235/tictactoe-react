@@ -26,3 +26,6 @@ npm start
 
 :ballot_box_with_check: **[Done]** Added styling with CSS
 
+## Screenshots
+
+![a screenshot of tictactoe-react](https://github.com/positive235/tictactoe-react/blob/master/img-for-readme/tictactoeRecord.gif?raw=true)
