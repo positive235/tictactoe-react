@@ -23,3 +23,6 @@ npm start
 :ballot_box_with_check: **[Done]** When someone wins, hightlight the three squares that caused the win
 
 :ballot_box_with_check: **[Done]** When no one wins, display a message about the result being a draw
+
+:ballot_box_with_check: **[Done]** Added styling with CSS
+
